@@ -1,30 +1,39 @@
-.container {
+
+.resume-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
     overflow: auto;
-
-  }
+    .pdf_page {
+      width: center;
+      height: 100%;
+      
+      h1 {
+          color: #ffd700;
+          font-size: 60px;
+          line-height: 53px;
+          margin: 0;
+          font-family: 'Coolvetica';
+          font-weight: 400;
+          text-align: center;
+      }
   
-  .pdf_page {
-    width: center;
-    height: 100%;
-    margin-top: 5%; /* Add this line */
-    
-    h1 {
-        color: #ffd700;
-        font-size: 60px;
-        line-height: 53px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400;
+      .react-pdf__Page {
+        display: block;
+        margin: 0 auto;
+      }
+      .pdf_link{
+        width: 100%;
+        height: 100%;
         text-align: center;
-    }
-
-    .react-pdf__Page {
-      display: block;
-      margin: 0 auto;
-    }
+        font-size: 20px;
+        background-color: #50618a;
+        color: red;
+      }
+  }  
+  }
+  body {
+    overflow-y: auto; /* Enable vertical scrolling */
   }
   

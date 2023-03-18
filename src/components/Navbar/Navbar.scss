@@ -1,8 +1,8 @@
 .nav-bar {
-    background: rgb(78, 74, 78);
+    background: #4e4a4e;
     width: 90px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
     min-height: 500px;
@@ -18,18 +18,25 @@
         display: block;
         margin: 8px auto;
         width: 40px;
-        height: auto;
+        height: top;
   
         &.sub-logo {
           width: 50px;
         }
       }
     }
+    @media only screen and (max-width: 900px) {
+      .logo {
+        display: none;
+      }
+    }
+
     .name {
       display: flex;
       justify-content: center;
       align-items: center;
       text-decoration: none;
+      color: #ffd700;
       font-size: 16px;
     }
     
@@ -44,7 +51,7 @@
       
       a {
         font-size: 30px;
-        color:rgb(245, 245, 245);
+        color:#f5f5f5;
         display: block;
         line-height: 51px;
         height: 51px;
@@ -129,7 +136,8 @@
           display: block;
           font-size: 25px;
           line-height: 20px;
-          color: rgb(245, 245, 245);
+          color: #f5f5f5;
+
         }
   
         &:hover {
@@ -145,8 +153,7 @@
     display: none;
   }
   
-  
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 900px) {
     .nav-bar { 
       background: transparent;
       position: initial;

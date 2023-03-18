@@ -1,7 +1,7 @@
 .home-page {
     .text-zone {
       position: absolute;
-      left: 10%;
+      left: 13%;
       top: 50%;
       transform: translateY(-50%);
       width: 40%;
@@ -18,27 +18,6 @@
       .welcName{
         color: #ffd700;
       }
-      &:before {
-        font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: -40px;
-        left: -15px;
-        opacity: 0.6;
-      }
-  
-      &:after {
-        font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: 18px;
-        margin-left: 20px;
-        animation: fadeIn 1s 1.7s backwards;
-        opacity: 0.6;
-      }
-  
       img {
         margin-left: 10px;
         margin-bottom: -12px;
@@ -83,7 +62,7 @@
   
   
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 900px) {
     .tags,
     .home-page h1:before,
     .home-page h1:after {

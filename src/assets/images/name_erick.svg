@@ -8,14 +8,16 @@
 <filter id="SVGID_0" y="-22%" height="144%" x="-21%" width="142%">
 	<feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
 	<feOffset dx="4" dy="4" result="oBlur"/>
-	<feFlood flood-color="rgb(78,74,78)" flood-opacity="1"/>
+	<feFlood flood-color="#4e4a4e" flood-opacity="1"/>
 	<feComposite in2="oBlur" operator="in"/>
 	<feMerge>
 		<feMergeNode/>
 		<feMergeNode in="SourceGraphic"/>
 	</feMerge>
 </filter>
-		<text xml:space="preserve" font-family="Palanquin Dark" font-size="40" font-style="normal" font-weight="700" line-height="1" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,215,0); fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-109.54" y="-53.88">Erick Tepan</tspan></text>
+		<text xml:space="preserve" font-family="Palanquin Dark" font-size="40" font-style="normal" font-weight="700" line-height="1" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; 
+		fill: #4e4a4e; 
+		fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-109.54" y="-53.88">Erick Tepan</tspan></text>
 <style>
           @font-face {
           font-family: "Palanquin Dark";

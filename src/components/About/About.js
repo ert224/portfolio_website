@@ -18,19 +18,32 @@ const About = () => {
       <div className="container about-page">
         <div className="text-zone">
           <h1>
-            About
+            About Me
           </h1>
           <h2>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          As an ambitious software engineer, I am passionate about seeking out 
+          opportunities that can expose me to the latest technologies in the IT 
+          industry. My goal is to work on diverse and challenging projects that can further enhance my skills and experience.
           </h2>
           <h2>
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+          My areas of interest include web development, machine 
+          learning, game development, and backend programming. 
+          I am continually exploring new technologies and pushing my limits to 
+          keep pace with the dynamic industry trends.
+         
           </h2>
           <h2>
-            
+          As a gay Latino working in the tech field, my identity is an essential 
+          part of who I am. It is vital for me to find a workplace that embraces 
+          diversity and inclusivity, where I can feel safe and comfortable being 
+          myself, so that I can focus on delivering high-quality work without 
+          worrying about my safety.
+          </h2>
+          <h2>
+          Apart from my work, I enjoy engaging in activities such as board games, 
+          video games, photography, anime, and sketching. These hobbies help me maintain 
+          a healthy work-life balance and provide me with a source of inspiration 
+          and creativity for my projects.
           </h2>
         </div>
 

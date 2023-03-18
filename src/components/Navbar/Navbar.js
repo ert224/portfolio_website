@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import LogoS from '../../assets/images/letter_E.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLinkedin, faGithub, faBitbucket, } from '@fortawesome/free-brands-svg-icons';
@@ -9,26 +9,61 @@ import { SiDevpost } from "react-icons/si";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   return (
-    <div className="nav-bar">
+    <div className={`nav-bar ${scrollPosition > 0 ? 'scrolled' : ''}`}>
     <Link className="logo" to="/" style={{ textDecoration: 'none' }}>
       <img src={LogoS} alt="Logo" />
       <p className='name'>Erick Tepan</p>
     </Link>
+
     <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink to="/" >
+        <NavLink 
+          exact="true"
+          activeclassname="active"
+          to="/"
+          onClick={() => setShowNav(false)}
+        >        
           <FontAwesomeIcon icon={faHome} color="#F5F5F5" />
         </NavLink>
 
-        <NavLink className="about-link" to="/about" >
+        <NavLink  
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#F5F5F5" />
         </NavLink>
 
-        <NavLink className="resume-link" to="/resume">
+        <NavLink 
+            activeclassname="active"
+            className="resume-link" 
+            to="/resume"
+            onClick={() => setShowNav(false)}
+            >
           <FontAwesomeIcon icon={faSuitcase} color="#F5F5F5" />
         </NavLink>
 
-        <NavLink className="contact-link" to="/contact" >
+        <NavLink 
+          activeclassname="active"
+          className="contact-link"
+          to="/contact"
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faEnvelope} color="#F5F5F5" />
         </NavLink>
       </nav>
@@ -41,6 +76,15 @@ const Navbar = () => {
             rel="noreferrer"
           >
           <FontAwesomeIcon icon={faLinkedin} color="#F5F5F5" className="anchor-icon"/>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://devpost.com/ert224"
+            target="_blank"
+            rel="noreferrer"
+          >
+          <SiDevpost/>
           </a>
         </li>
         <li>
@@ -59,15 +103,6 @@ const Navbar = () => {
             rel="noreferrer"
           >
           <FontAwesomeIcon icon={faBitbucket} color="#F5F5F5" className="anchor-icon"/>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://devpost.com/ert224"
-            target="_blank"
-            rel="noreferrer"
-          >
-          <SiDevpost/>
           </a>
         </li>
       </ul>
