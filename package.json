@@ -1,5 +1,5 @@
 {
-  "home": "http://ert224.github.io/portfolio_website",
+  "home": "https://ert224.github.io/portfolio_website",
   "name": "test_navbar",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,6 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^3.4.1",
-    "gh-pages": "^5.0.0",
     "gsap-trial": "^3.11.4",
     "loaders.css": "^0.1.2",
     "pdfjs-dist": "^2.15.349",
@@ -35,8 +34,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -58,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
