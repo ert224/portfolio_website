@@ -10,6 +10,7 @@ import {
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './About.scss'
+import devpost_img from '../../assets/images/devpost_projects.jpg';
 
 const About = () => {
 
@@ -45,6 +46,11 @@ const About = () => {
           a healthy work-life balance and provide me with a source of inspiration 
           and creativity for my projects.
           </h2>
+          <h1>
+            Accomplishments       
+          </h1>
+          <br></br>
+          <img src={devpost_img} alt="Logo" />          
         </div>
 
         <div className="stage-cube-cont">

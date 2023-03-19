@@ -6,6 +6,10 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    img{
+      height: auto;
+      width: 200%;
+    }
   }
 
   h1 {
@@ -30,7 +34,7 @@
 .stage-cube-cont {
     width: 50%;
     height: 100%;
-    top: 0;
+    top: 10%;
     padding-top: 18%;
     margin-left: 0;
     position: absolute;
