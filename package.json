@@ -1,6 +1,6 @@
 {
-  "home": "https://ert224.github.io/portfolio_website",
-  "name": "test_navbar",
+  "homepage": "https://ert224.github.io/portfolio_website",
+  "name": "portfolio_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

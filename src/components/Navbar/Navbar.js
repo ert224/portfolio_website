@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className={`nav-bar ${scrollPosition > 0 ? 'scrolled' : ''}`}>
-    <Link className="logo" to="/" style={{ textDecoration: 'none' }}>
+    <Link className="logo" to="portfolio_website/" style={{ textDecoration: 'none' }}>
       <img src={LogoS} alt="Logo" />
       <p className='name'>Erick Tepan</p>
     </Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
         <NavLink 
           exact="true"
           activeclassname="active"
-          to="/"
+          to="portfolio_website/"
           onClick={() => setShowNav(false)}
         >        
           <FontAwesomeIcon icon={faHome} color="#F5F5F5" />
@@ -44,7 +44,7 @@ const Navbar = () => {
         <NavLink  
           activeclassname="active"
           className="about-link"
-          to="/about"
+          to="portfolio_website/about"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#F5F5F5" />
         </NavLink>
@@ -52,7 +52,7 @@ const Navbar = () => {
         <NavLink 
             activeclassname="active"
             className="resume-link" 
-            to="/resume"
+            to="portfolio_website/resume"
             onClick={() => setShowNav(false)}
             >
           <FontAwesomeIcon icon={faSuitcase} color="#F5F5F5" />
@@ -61,7 +61,7 @@ const Navbar = () => {
         <NavLink 
           activeclassname="active"
           className="contact-link"
-          to="/contact"
+          to="portfolio_website/contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#F5F5F5" />
