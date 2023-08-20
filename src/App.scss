@@ -1,4 +1,4 @@
-$primary-color: #ffd700;
+$primary-color: #9b6d28;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -51,4 +51,8 @@ textarea {
 
 body {
   overflow-y: auto; /* Enable vertical scrolling */
+  padding-top: 50px; // this ensures the content starts below the close icon
+  background: #001549;
+
 }
+
