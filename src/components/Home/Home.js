@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import './Home.scss'
 import Loader from 'react-loaders'
 import Logo from './Logo'
-const Home = () =>{
-    return(
+
+const Home = () => {
+    return (
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -29,15 +30,14 @@ const Home = () =>{
                 <h2>
                 Software Engineer
                 </h2>
-                <Link to="/contact" className='flat-button'>
+                <Link to="/portfolio_website/contact" className='flat-button'>
                     Contact Me
                 </Link>
             </div>
-            <Logo />
             <Loader type="pacman" />
+            <Logo />
         </div>
     )
-
-
 }
+
 export default Home

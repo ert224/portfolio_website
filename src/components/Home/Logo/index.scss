@@ -1,57 +1,51 @@
 .logo-container {
-    z-index: -5;
-    width: 600px;
-    height: auto;
-    opacity: 0;
+  z-index: -1;
+  width: 500px;
+  //height: 609px;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  right: 6%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  
+  .solid-logo {
     position: absolute;
-    top: 5%;
-    right: 7%;
-    bottom: 0;
-    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
     margin: auto;
-  
+    width: 100%;
+    opacity: 0;
+    //transform: rotateZ(15deg) !important;
+  }
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .logo-container {
+    z-index: -1;
+    width: 500px;
+    height: 350px;
+    opacity: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; // Center horizontally
+    align-items: center;    // Center vertically
+
     .solid-logo {
-      position: absolute;
-      top: 0;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
-      width: 100%;
-      opacity: 0;
-      transform: rotateZ(0deg) !important;
-      z-index: -10;
+      margin-bottom: 50px;    // Add a margin at the bottom for blank space
+      margin-left: 5px;      // Move the image off-center by 5px to the right
     }
   }
-  @media only screen and (max-width: 1500px) {
-    .logo-container {
-      z-index: -5;
-      width: 480px;
-      height: auto;
-      opacity: 0;
-      position: absolute;
-      top: 5%;
-      right: 1%;
-      bottom: 0;
-      left: auto;
-      margin: auto;
-    }
+
+  .logo-container {
+    width: 350px;
+    opacity: 0;
+    left: 0;
   }
-  @media only screen and (max-width: 1000px) {
-    .logo-container {
-      z-index: -5;
-      width: 480px;
-      height: auto;
-      opacity: 0;
-      position: absolute;
-      top: 87%;
-      left: 0%;
-    }
-  }
-  
-  
-  .svg-container {
-    stroke: #ffd700;
-    stroke-width: 10;
-  }
-  
+}
+
+
