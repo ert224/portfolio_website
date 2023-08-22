@@ -17,11 +17,10 @@
 
   .iframe-container {
     width: 100vw; // Using viewport width to make it responsive
-    padding-top: 112.5%; // 900/800 = 1.125 or 112.5% for 8:9 aspect ratio
-    position: relative;
-
+    height: 100vw;
+    max-width: 800px;
     iframe {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 0;
       width: 100%;
@@ -30,3 +29,21 @@
     }
   }
 }
+
+// // Updated styles for mobile
+// @media (pointer:none), (pointer:coarse) {
+//   .iframe-container {
+//     width: 100vw; // Using viewport width to make it responsive
+//     padding-top: 112.5%; // 900/800 = 1.125 or 112.5% for 8:9 aspect ratio
+//     position: relative;
+
+//     iframe {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       border: none;
+//     }
+//   }
+// }
