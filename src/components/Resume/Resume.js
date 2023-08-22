@@ -11,23 +11,18 @@ const Resume = () => {
   }
 
   return (
-    <div className="container resume-page">
-      <div className="pdf_page">
-        <h1>R E S U M E</h1>
-        <div>
-          <iframe 
+    <div className="pdf_page">
+      <h1>R E S U M E</h1>
+      <div className="iframe-container">
+        <iframe 
           title='resume_pdf'
           src="https://drive.google.com/file/d/1l61d1rolfAsDIVcoPzicc4xpxMI7L0FU/preview"
-          width="800" 
-          height="900" 
-          allow="autoplay">
-            
-          </iframe>
-        </div>
+          allow="autoplay"
+        ></iframe>
       </div>
       <Loader type="pacman" />
     </div>
   );
-};
+}  
 
 export default Resume;
