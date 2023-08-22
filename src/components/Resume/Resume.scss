@@ -19,6 +19,9 @@
     width: 100vw; // Using viewport width to make it responsive
     height: 100vw;
     max-width: 800px;
+    max-height: 1025px;
+    min-height: 500px;
+
     iframe {
       position: relative;
       top: 0;
