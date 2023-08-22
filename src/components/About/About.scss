@@ -1,19 +1,12 @@
 .about-page {
   .text-zone {
-    position: absolute;
-    left: 12%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
+    margin-left: 15px;
+    margin-top: 80px;
+    width: 70%;
     max-height: 90%;
-    img{
-      height: auto;
-      width: 200%;
-    }
   }
-
   h1 {
-    color: #fff;
+    color: #ffd700;
     font-size: 60px;
     line-height: 53px;
     margin: 0;
@@ -22,24 +15,39 @@
   }
 
   h2 {
-    color: #cbfdf1;
+    color: white;
     margin-top: 20px;
     font-weight: 400;
     font-size: 18px;
     font-family: sans-serif;
     letter-spacing: 3px;
+    //animation: fadeIn 1s 1.8s backwards;
+    b{
+      font-weight: 900; // You can adjust this value to what suits you best. Common values are 700 for bold and 900 for extra bold (black).
+    }
+  }
+
+  h3 {
+    color: #cbfdf1;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
   }
 }
+
 .stage-cube-cont {
-    width: 50%;
-    height: 100%;
-    top: 10%;
-    padding-top: 18%;
-    margin-left: 0;
+    //width: 80%;
+    //height: 100%;
+    top: 35%;
+    right: 15%;
+    //padding-top: 18%;
+    //margin-left: 0;
     position: absolute;
-    right: 0;
-    overflow: hidden;
+    //right: 0;
+    //overflow: hidden;
   }
   
   .cubespinner {
@@ -112,3 +120,31 @@
       transform: rotateX(90deg);
     }
   }
+
+
+// Updated styles for mobile
+@media (pointer:none), (pointer:coarse) {
+  .text-zone {
+    margin-left: 15px;
+    margin-top: 20px !important;
+    max-height: 90%;
+    width: 95% !important;
+    //margin-right: 15px !important;
+
+  }
+
+  .stage-cube-cont {
+    position: relative; // Change from "none" to "relative" to keep it in the flow
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 300px;
+    height: 250px;
+    //border: 1px solid #fff;  // Updated this line to make the border white
+    //display: flex;
+    //box-shadow: 0 0 20px 0px lightyellow;
+    left: 10%;
+    justify-content: center; // Center horizontally
+    align-items: center;    // Center vertically
+  }
+}
+
