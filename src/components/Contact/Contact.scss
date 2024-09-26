@@ -1,39 +1,44 @@
 .contact-page {
-  .text-zone {
+  .contact-form {
+    width: 100%;
+    font-size: 20px;
+
+    .logo_icons {
+      display: flex;
+      font-size: 40px;
+      justify-content: flex-start;
+
+      /* Add margin to all icon elements except the last one */
+      a:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
   }
-  
-    h1 {
-      color: #fff;
-      font-size: 60px;
-      line-height: 53px;
-      font-family: 'Coolvetica';
-      font-weight: 400;
+
+  .map-wrap {
+    padding-top: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-basis: 600px; // Set a base width for the map container
+    height: 600px;
+    display: flex; // Ensure the iframe stays centered
+  }
+
+  @media only screen and (max-width: 768px) {
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
     }
 
-    h2 {
-        color: #cbfdf1;
-        font-size: 28px;
-        font-weight: 400;
-      }
- 
-    .contact-form {
-        width: 100%;
-        font-size: 20px;
-        .logo_icons {
-          display: flex;
-          font-size: 40px;
-          justify-content: flex-start;
+    .map-wrap {
+      order: 2;  // Move the map-wrap to the bottom
+      width: 100%; // Make sure it takes full width
+      height: 300px; // Adjust the height to be smaller for mobile
+      margin-top: 20px; // Add some space between the form and the map
+    }
 
-          /* Add margin to all icon elements except the last one */
-          a:not(:last-child) {
-            margin-right: 35px;
-          }
-        }
-      }
-  
-      .map-wrap {
-        flex-basis: 600px; // Set a base width for the map container
-        height: 600px;
-        display: flex; // Ensure the iframe stays centered
-      }
-} 
+    .contact-form {
+      order: 1;
+    }
+  }
+}

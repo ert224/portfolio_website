@@ -12,11 +12,10 @@ const Resume = () => {
 
   return (
     <div className="pdf_page">
-      <h1>R E S U M E</h1>
       <div className="iframe-container">
         <iframe 
           title='resume_pdf'
-          src="https://drive.google.com/file/d/1l61d1rolfAsDIVcoPzicc4xpxMI7L0FU/preview"
+          src="https://drive.google.com/file/d/1d9IgjxjxsbT5pvLgr8eatJkXYfFibb1c/preview"
           allow="autoplay"
         ></iframe>
       </div>

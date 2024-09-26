@@ -78,6 +78,8 @@ body {
       letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
       font-style: italic;
+      word-wrap: break-word; /* Breaks the word if it exceeds the container width */
+      overflow-wrap: break-word; /* Ensures words break properly */
   }
 
   .text-zone {
@@ -95,7 +97,8 @@ body {
 
   .image-zone {
     width: 35%; /* Allocate 35% of the container's width to the image */
-    margin-top: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +110,7 @@ body {
     border-radius: 10px;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 768px ) {
    
 
     h1 {
