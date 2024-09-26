@@ -19,6 +19,7 @@
     "gsap-trial": "^3.11.4",
     "loaders.css": "^0.1.2",
     "pdfjs-dist": "^2.15.349",
+    "portfolio_website": "file:",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",

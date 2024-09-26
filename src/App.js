@@ -12,12 +12,14 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="portfolio_website/" element={<Home />} />
-        <Route path="portfolio_website/about" element={<About />} />
-        <Route path="portfolio_website/resume" element={<Resume />} />
-        <Route path="portfolio_website/contact" element={<Contact />} />
-      </Routes>
+      <div class="app">
+        <Routes>
+          <Route path="portfolio_website/" element={<Home />} />
+          <Route path="portfolio_website/about" element={<About />} />
+          <Route path="portfolio_website/resume" element={<Resume />} />
+          <Route path="portfolio_website/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

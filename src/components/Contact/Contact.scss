@@ -1,18 +1,11 @@
 .contact-page {
-  margin-right: 10px;
-
   .text-zone {
-    margin-left: 15px;
-    margin-top: 40px;
-    width: 90%;
-    max-height: 90%;
   }
   
     h1 {
       color: #fff;
       font-size: 60px;
       line-height: 53px;
-      margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
     }
@@ -20,13 +13,11 @@
     h2 {
         color: #cbfdf1;
         font-size: 28px;
-        margin: 0;
         font-weight: 400;
       }
  
     .contact-form {
         width: 100%;
-        margin-top: 20px;
         font-size: 20px;
         .logo_icons {
           display: flex;

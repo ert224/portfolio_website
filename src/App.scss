@@ -51,9 +51,93 @@ textarea {
 
 body {
   overflow-y: auto; /* Enable vertical scrolling */
-  padding-top: 50px; // this ensures the content starts below the close icon
   background: #001549;
   padding-bottom: 50px; // this ensures the content starts below the close icon
+  .app {
+    padding-top: 60px;
+    margin-left: 3%;
+    margin-right: 3%;  
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 53px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    color: #fff;
+
+    .welcName {
+      color: #ffd700;
+    }
+  }
+  h2 {
+      color: #fff;
+      font-weight: 400;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+      font-style: italic;
+  }
+
+  .text-zone {
+    width: 60%; /* Allocate 60% of the container's width to the text */
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content at the top */
+    flex-wrap: nowrap; /* Prevent wrapping of the content */
+    gap: 20px; /* Add some space between the text and image zones */
+  }
+
+
+  .image-zone {
+    width: 35%; /* Allocate 35% of the container's width to the image */
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-zone img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 500px) {
+   
+
+    h1 {
+      color: #fff;
+      font-size: 50px;
+      line-height: 53px;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+  
+      .welcName {
+        color: #ffd700;
+      }
+    }
+
+    .content-wrapper {
+      flex-direction: column; /* Stack the content vertically on smaller screens */
+    }
+    .text-zone,
+    .image-zone {
+      width: 100%; /* Make each zone take full width */
+    }
+  
+    .image-zone img {
+      width: 100%;
+    }
+
+  }
+
 }
 
 
