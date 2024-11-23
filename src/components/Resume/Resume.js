@@ -15,9 +15,10 @@ const Resume = () => {
       <div className="iframe-container">
         <iframe 
           title='resume_pdf'
-          src="https://drive.google.com/file/d/1d9IgjxjxsbT5pvLgr8eatJkXYfFibb1c/preview"
+          src="https://drive.google.com/file/d/1QhGXtjPYMmEENT6Y5VviZ-pca85ywO4F/preview"
           allow="autoplay"
         ></iframe>
+        
       </div>
       <Loader type="pacman" />
     </div>
